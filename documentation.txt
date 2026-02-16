@@ -1,0 +1,308 @@
+LINKS
+
+e-mail: contact@nysa.finance
+website: www.nysa.finance
+Business Inquiries, Buy/Sell Nysa Agents: https://form.typeform.com/to/xMeub7du
+Discord: https://discord.gg/6BxRytJdaE
+Documentation: https://nysa.gitbook.io/nysa/
+Testnet: www.testnet.nysa.finance
+Mainnet: www.app.nysa.finance
+X: @NysaFinance
+Medium: https://medium.com/@nysaprotocol
+LinkTree: https://linktr.ee/nysaprotocol
+
+
+# Welcome
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2Fl4mA7jpSty6khsv0Wibh%2Fwelcome.png?alt=media&#x26;token=6c809337-206c-4961-9c9f-444693e1f209" alt=""><figcaption></figcaption></figure>
+
+Welcome to Nysa, a lending and borrowing platform designed to combine the reliability of Aave V3 with a next-generation, agent-driven management layer.\
+The protocol builds on Aave V3’s proven architecture and integrates autonomous Agents (Gluo, Lumia, Vexo) with the high-performance Linea blockchain to provide a lending environment focused on transparency, consistency and AI-Driven suggestions.
+
+### How can I use Nysa?
+
+Nysa is an overcollateralized lending and borrowing protocol built on a secure and modern architecture built on top of Aave V3. Within Nysa, users can operate in the following roles:
+
+* **Suppliers**\
+  Users can deposit supported assets into the protocol and earn passive interest. Interest rates are variable and defined by the protocol’s interest rate model, which reflects real-time supply and demand conditions. Supplied assets are borrowed by other users and are fully secured by the collateral they deposit, ensuring protection against borrower insolvency.
+* **Borrowers**\
+  By depositing assets as collateral, users become eligible to borrow other tokens available on Nysa. Borrowing can serve multiple purposes, including taking long or short positions, executing market strategies, exploiting arbitrage opportunities, or accessing short-term liquidity without unwinding long-term holdings.
+* **Liquidators**\
+  When a position becomes under-collateralized, Nysa activates its liquidation mechanism. Liquidators can repay part of a borrower’s debt and receive a reward defined by the protocol. This process ensures system stability and protects supplier funds.
+
+In addition, **any strategy, technical insight, or resource available within the protocol can be accessed and executed through Nysa’s AI Agents and their conversational interfaces**, enabling a more dynamic and guided interaction with the system.
+
+# Roadmap 2026
+
+<table><thead><tr><th width="220.66668701171875">Goal</th><th>Description</th></tr></thead><tbody><tr><td>Lending Protocol Launch</td><td>The Nysa Protocol is launched with full <strong>lending and borrowing functionality</strong>, open to all users.<br>This phase marks the deployment of the core protocol infrastructure, including collateralized lending markets, interest rate mechanisms, liquidation processes, and on-chain accounting. Users can supply assets, borrow against collateral, and interact with the protocol in a fully operational environment.</td></tr><tr><td>Gluo Agent Launch</td><td>The first NysaAgent, <strong>Gluo</strong>, is introduced to the ecosystem.<br>Gluo enables continuous community interaction across Discord, Telegram, and X, providing real-time guidance, educational support, and protocol updates. This phase focuses on improving accessibility and understanding of the protocol for all users.</td></tr><tr><td>Vexo Agent Launch</td><td><strong>Vexo</strong> is released as the conversational interface for direct protocol interaction.<br>Users can connect their wallets, execute transactions, and manage positions through conversational prompts, significantly simplifying the user experience. This phase introduces a new interaction paradigm that reduces reliance on traditional user interfaces.</td></tr><tr><td>Lumia Agent Launch</td><td>Lumia provides insights into protocol-level and user-level risk metrics, including TVL, Value-at-Risk, liquidation exposure, and supply/borrow caps. It also supports governance and decision-making by offering data-driven risk assessments and recommendations.</td></tr></tbody></table>
+
+# Supply & Withdraw
+
+### Supply
+
+In the Nysa lending protocol, the supply function allows users to deposit supported assets into the platform, contributing liquidity that can be borrowed by other participants. By supplying assets, users earn passive interest over time, determined by the protocol’s interest rate model and the supply-demand dynamics of each asset.
+
+### Withdraw
+
+The withdraw function enables users to retrieve the assets they previously supplied to the protocol, subject to available on-chain liquidity. When withdrawing, users also collect (“harvest”) the interest accrued over time from lending their assets.
+
+### Tutorials
+
+#### **How to Deposit (Supply)**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to deposit
+3. Click **Supply**
+4. Enter the amount you wish to deposit
+5. Confirm and execute the transaction
+
+***
+
+#### **How to Withdraw**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to withdraw
+3. Click **Withdraw**
+4. Enter the amount you wish to withdraw
+5. Confirm and execute the transaction
+
+# Borrow & Repay
+
+### Borrow
+
+Once assets are supplied, they begin generating interest and simultaneously act as collateral, making the user eligible to borrow additional assets.\
+The maximum borrowable amount is determined by each asset’s **Loan-To-Value (LTV)** parameter, which defines the proportion of an asset’s value that can be borrowed against its collateral.
+
+> For example, if an asset has an LTV of 80% and the value of the supplied collateral is $10,000 at the time of the borrowing request, the user can borrow up to $8,000.\
+> Borrowing allows users to take leveraged positions, access liquidity, or execute market strategies without liquidating their underlying holdings.\
+> Further details are available in the *Borrowing* section of the documentation.
+
+### Repay
+
+The repay function enables borrowers to return the assets they previously borrowed, including any accrued interest.\
+Repaying reduces the outstanding debt, restores the position’s health factor, and gradually releases the locked collateral. Once the debt is fully repaid, the collateral becomes entirely available for withdrawal or for opening new borrowing positions.
+
+### Tutorials
+
+#### **How to Borrow**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to borrow
+3. Click **Borrow**
+4. Enter the amount you wish to borrow
+5. Confirm and execute the transaction
+
+***
+
+#### **How to Repay**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to repay
+3. Click **Repay**
+4. Enter the amount you wish to repay
+5. Confirm and execute the transaction
+
+# Interest Rate Model
+
+### **Introduction**
+
+The Interest Rate Model defines how borrowing and supplying rates evolve based on the utilization of each reserve. Its objective is to maintain a healthy balance between available liquidity and borrowing demand. By adjusting interest rates dynamically according to market conditions, the model ensures efficient capital usage and preserves protocol stability.
+
+Nysa adopts an interest rate strategy inspired by Aave V3’s proven framework, which uses a piecewise, two-slope curve. This model adjusts rates based on each reserve’s utilization, encouraging borrowing when liquidity is abundant and protecting liquidity when demand becomes high.
+
+***
+
+### **Utilization Rate**
+
+The **Utilization Rate (U)** represents the proportion of a reserve currently borrowed.
+
+$$
+U = \frac{\text{Total Borrows}}{\text{Total Liquidity}}
+$$
+
+Where **Total Liquidity** is the sum of available liquidity and total borrowed assets.
+
+* Low utilization → borrowing rates decrease
+* High utilization → borrowing rates increase
+
+***
+
+### **Optimal Utilization Rate**
+
+Each asset has a defined **Optimal Utilization Rate (U\_optimal)**.
+
+* Below this point, interest rates increase gradually
+* Above this point, interest rates rise more aggressively
+
+This ensures the protocol remains efficient under normal usage and protected during periods of high borrowing activity.
+
+***
+
+### **Borrow Interest Rate Calculation**
+
+The borrow rate is calculated using a **two-slope (kinked) model** consisting of:
+
+* **Base Rate**
+* **Slope 1** (applied before optimal utilization)
+* **Slope 2** (applied after optimal utilization)
+
+#### **Formulas**
+
+If U ≤ U\_optimal:
+
+$$
+\text{BorrowRate} = \text{BaseRate} + U \cdot \text{Slope1}
+$$
+
+If U > U\_optimal:
+
+$$
+\text{BorrowRate} =
+\text{BaseRate}
+
+* \text{Slope1}
+* \left(
+  \frac{U - U\_{\text{optimal}}}{1 - U\_{\text{optimal}}}
+  \right)
+  \cdot \text{Slope2}
+  $$
+
+***
+
+### **Supply Interest Rate Calculation**
+
+Suppliers earn interest based on the borrow rate and the reserve’s utilization.
+
+The supply rate is derived from:
+
+* The **Borrow Rate**
+* The **Utilization Rate (U)**
+* The **Reserve Factor**, which specifies the portion of interest retained by the protocol
+
+$$
+\text{SupplyRate}
+\= \text{BorrowRate} \cdot U \cdot (1 - \text{ReserveFactor})
+$$
+
+***
+
+### **Key Parameters**
+
+Each reserve defines the following parameters shaping the interest rate curve:
+
+* **Base Rate**
+* **Optimal Utilization Rate**
+* **Slope 1**
+* **Slope 2**
+* **Reserve Factor**
+
+These parameters must be calibrated to ensure the right balance between liquidity, efficiency, and system stability.
+
+# Agents
+
+Nysa introduces **NysaAgents**, a new suite of AI agents launched for the first time exclusively within the protocol. Their purpose is to simplify how users interact with DeFi systems and to extend Nysa’s functionality beyond traditional interfaces. The NysaAgents are designed with three core objectives:
+
+* **Improve user experience** by providing conversational access to educational content, protocol updates, the Risk Framework, strategies, and core features of Nysa.
+* **Reduce the knowledge and language barriers** typically present in DeFi, enabling safer and more informed participation in mainstream environments, regardless of the user’s native language.
+* **Promote the adoption of AI Agents** across third-party protocols and the broader ecosystem, increasing the revenues of Nysa Protocol and its Sellers.
+
+To achieve this vision, Nysa introduces **three specialized Agents**, available on Nysa:
+
+* **Gluo** - Agent for Community Managent
+* **Lumia** - Agent for Risk-Management
+* **Vexo** - Agent for Conversational Access to DeFi Protocols
+
+{% columns %}
+{% column %}
+
+<h3 align="center">Gluo</h3>
+{% endcolumn %}
+
+{% column %}
+
+<h3 align="center">Lumia</h3>
+{% endcolumn %}
+
+{% column %}
+
+<h3 align="center">Vexo</h3>
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2FMXbi8qFa9TLvWxG5gsea%2Fgluo.png?alt=media&#x26;token=d09219c5-8003-4b87-b668-6033943f8b73" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2FJyM9eU4zx5PJ07qtpDvu%2Flumia.png?alt=media&#x26;token=2b211598-1dda-4f46-93a1-5cd8d879ebf7" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2Fwbl1HrwV75EMY8piydoH%2Fvexo.png?alt=media&#x26;token=6b7a6f32-1453-4bb9-9bb6-ec9c667b8fff" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+
+<h4 align="center"><a href="agents/gluo">Meet Gluo</a></h4>
+{% endcolumn %}
+
+{% column %}
+
+<h4 align="center"><a href="agents/lumia">Meet Lumia</a></h4>
+{% endcolumn %}
+
+{% column %}
+
+<h4 align="center"><a href="agents/vexo">Meet Vexo</a></h4>
+{% endcolumn %}
+{% endcolumns %}
+
+### Business Opportunities
+
+Nysa Agents are designed to be **modular and extensible**, offering a concrete business opportunity for both protocols and individuals.\
+Any Web3 protocol can integrate Nysa Agents into its ecosystem, with the option to apply **custom configurations and adaptations** based on specific needs.
+
+In parallel, any user can become a **NysaAgent Seller**, promoting and selling Nysa Agents while earning a **commission on every successful subscription**.
+
+To subscribe to a Nysa Agent or apply as a Seller, please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+# Gluo
+
+**Gluo** is Nysa’s community-facing agent, designed to support users, partners, and contributors through Discord.
+
+Gluo acts as a **community manager and first-line support layer**, helping users understand the protocol, stay up to date with official announcements, and navigate Nysa’s ecosystem efficiently.
+
+Do you want to sell Gluo or integrate it to your Web3 Protocol? Please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+### Gluo's Job
+
+<table><thead><tr><th width="216.22222900390625">Function</th><th>Description</th></tr></thead><tbody><tr><td>Education &#x26; Guidance</td><td><p>Helps users understand Nysa’s protocol and vision, explaining how to use the platform and providing structured information on:</p><ul><li>protocol analytics, architecture and core concepts</li><li>roadmap and upcoming milestones</li><li>Nysa Agents and their use cases</li><li>tokenomics, airdrops, and fundraising events</li></ul><p>All answers are based on official documentation.</p></td></tr><tr><td>Business Inquires</td><td>Guides users and external teams through business and partnership requests, clarifying how and where contacting the team.</td></tr><tr><td>Troubleshootings</td><td>Assists users with common issues and troubleshooting requests. When a request requires human intervention, Gluo gathers the necessary information and forwards it to the correct internal team branch, helping reduce response times and support overhead.</td></tr><tr><td>X Real-Time Data</td><td><p>Continuously monitors Nysa’s official X account to:</p><ol><li>Stay up to date with protocol announcements and respond to user questions about recent updates</li><li>Summarize and publish official announcements directly to Nysa’s Discord announcement channel</li></ol></td></tr></tbody></table>
+
+# Lumia
+
+**Lumia** is dedicated to managing and simplifying the protocol’s **Risk Framework**.\
+It suggests optimal borrowing amounts for users, monitors TVL, Value-at-Risk, Liquidation conditions, and Supply/Borrow Caps. Lumia can be connected to the DAO or communication channels to recommend updated Caps, VaR thresholds, and other risk-related parameters.\
+Users may also consult Lumia for simplified explanations of their own risk posture and the protocol’s safety mechanics.
+
+Do you want to sell Lumia or integrate it to your Web3 Protocol? Please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+### Lumia's Job
+More is yet to come.
+
+# Vexo
+
+**Vexo** enhances user interaction through a fully conversational experience.\
+Users connect their wallet, chat with Vexo, and confirm transactions directly through dialogue. This allows seamless navigation of the protocol without relying on traditional UI flows.\
+The team is also evaluating potential extensions enabling Vexo to interact with Aave, unlocking arbitrage opportunities between Nysa and Aave and expanding users’ earning strategies. Vexo can additionally provide recommendations, tutorials, onboarding guidance, and general support.
+
+Do you want to sell Vexo or integrate it to your Web3 Protocol? Please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+### Vexo's Job
+More is yet to come.
+
