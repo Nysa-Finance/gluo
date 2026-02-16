@@ -1,0 +1,95 @@
+# Interest Rate Model
+
+### **Introduction**
+
+The Interest Rate Model defines how borrowing and supplying rates evolve based on the utilization of each reserve. Its objective is to maintain a healthy balance between available liquidity and borrowing demand. By adjusting interest rates dynamically according to market conditions, the model ensures efficient capital usage and preserves protocol stability.
+
+Nysa adopts an interest rate strategy inspired by Aave V3’s proven framework, which uses a piecewise, two-slope curve. This model adjusts rates based on each reserve’s utilization, encouraging borrowing when liquidity is abundant and protecting liquidity when demand becomes high.
+
+***
+
+### **Utilization Rate**
+
+The **Utilization Rate (U)** represents the proportion of a reserve currently borrowed.
+
+$$
+U = \frac{\text{Total Borrows}}{\text{Total Liquidity}}
+$$
+
+Where **Total Liquidity** is the sum of available liquidity and total borrowed assets.
+
+* Low utilization → borrowing rates decrease
+* High utilization → borrowing rates increase
+
+***
+
+### **Optimal Utilization Rate**
+
+Each asset has a defined **Optimal Utilization Rate (U\_optimal)**.
+
+* Below this point, interest rates increase gradually
+* Above this point, interest rates rise more aggressively
+
+This ensures the protocol remains efficient under normal usage and protected during periods of high borrowing activity.
+
+***
+
+### **Borrow Interest Rate Calculation**
+
+The borrow rate is calculated using a **two-slope (kinked) model** consisting of:
+
+* **Base Rate**
+* **Slope 1** (applied before optimal utilization)
+* **Slope 2** (applied after optimal utilization)
+
+#### **Formulas**
+
+If U ≤ U\_optimal:
+
+$$
+\text{BorrowRate} = \text{BaseRate} + U \cdot \text{Slope1}
+$$
+
+If U > U\_optimal:
+
+$$
+\text{BorrowRate} =
+\text{BaseRate}
+
+* \text{Slope1}
+* \left(
+  \frac{U - U\_{\text{optimal}}}{1 - U\_{\text{optimal}}}
+  \right)
+  \cdot \text{Slope2}
+  $$
+
+***
+
+### **Supply Interest Rate Calculation**
+
+Suppliers earn interest based on the borrow rate and the reserve’s utilization.
+
+The supply rate is derived from:
+
+* The **Borrow Rate**
+* The **Utilization Rate (U)**
+* The **Reserve Factor**, which specifies the portion of interest retained by the protocol
+
+$$
+\text{SupplyRate}
+\= \text{BorrowRate} \cdot U \cdot (1 - \text{ReserveFactor})
+$$
+
+***
+
+### **Key Parameters**
+
+Each reserve defines the following parameters shaping the interest rate curve:
+
+* **Base Rate**
+* **Optimal Utilization Rate**
+* **Slope 1**
+* **Slope 2**
+* **Reserve Factor**
+
+These parameters must be calibrated to ensure the right balance between liquidity, efficiency, and system stability.

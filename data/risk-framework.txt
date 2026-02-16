@@ -1,0 +1,19 @@
+# Risk Framework
+
+At Nysa, risk management is treated as a continuous process rather than a one-time assessment.\
+By design, DeFi protocols cannot be risk-free, and acknowledging this reality is the first step toward building resilient financial infrastructure. We talk about this matter in our [ToS](https://nysa.gitbook.io/nysa/resources/tos).
+
+For this reason, Nysa adopts a structured Risk-Framework that addresses risk across **three distinct and complementary phases** of the protocol lifecycle: **pre-deployment, post-deployment, and post-attack**.
+
+* **Pre-deployment**, the focus is on risk prevention and architectural robustness. Nysa is built on a battle-tested Aave V3 lending architecture, leveraging conservative and well-defined risk parameters at both the asset and protocol level. This foundation is further reinforced through smart contract audits conducted by reputable audit firms and independent penetration testing.
+* **Post-deployment**, The protocol relies on a **Sentinel System**, a real-time monitoring and analysis AI Agent designed to continuously observe on-chain and market data, detect anomalies, and identify emerging risk conditions. Upon detection, smart contract-level safeguarding mechanisms are triggered to prevent any risk. In parallel, the mechanism analyzes liquidity, utilization, and market dynamics to provide data-driven recommendations for optimized risk and liquidity parameters. This system will be launched within Nysa Mainnet launch, but the mid-term idea is to integrate it with **Lumia Agent.**
+* **Post-attack**, Nysa is designed to ensure a clear, structured, and enforceable response to critical incidents. In the event of an exploit or severe adverse scenario, the team commits to a rapid intervention governed by **contractually and legally binding conditions** established with the auditing firm. These agreements are intended to guarantee the execution of a fast, concrete post-exploit mitigation, with the explicit objective of safeguarding user funds through dedicated insurance coverage mechanisms. In parallel, Nysa envisions evolving this protection layer into a **community-driven insurance model** over time.
+
+Based on this approach, Nysa identifies **three primary risk vectors**:
+
+1. **Smart Contract Risk**\
+   Mitigated through the Aave V3 lending architecture, combined with comprehensive audits and robust penetration testing conducted by independent security teams. In the next sections, you can see the [Risk Parameters](https://nysa.gitbook.io/nysa/keypoints/risk-framework/risk-parameters), Audit and Penetration Tests outputs.
+2. **Oracle Risk**\
+   Addressed by adopting a multi-source price feed architecture, with the objective of integrating at least three independent oracle providers to ensure reliable and resilient price data. More details in the [Price Feeds](https://nysa.gitbook.io/nysa/keypoints/risk-framework/price-feeds) section.
+3. **Economic and Systemic Risk**\
+   Managed through a real-time recommendation system that analyzes market and liquidity conditions to suggest optimized risk and liquidity parameters, balancing protocol safety, capital efficiency, and user experience. We will talk in details about this once Lumia Agent is out.

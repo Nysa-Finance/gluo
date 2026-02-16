@@ -1,0 +1,73 @@
+# Agents
+
+Nysa introduces **NysaAgents**, a new suite of AI agents launched for the first time exclusively within the protocol. Their purpose is to simplify how users interact with DeFi systems and to extend Nysa’s functionality beyond traditional interfaces. The NysaAgents are designed with three core objectives:
+
+* **Improve user experience** by providing conversational access to educational content, protocol updates, the Risk Framework, strategies, and core features of Nysa.
+* **Reduce the knowledge and language barriers** typically present in DeFi, enabling safer and more informed participation in mainstream environments, regardless of the user’s native language.
+* **Promote the adoption of AI Agents** across third-party protocols and the broader ecosystem, increasing the revenues of Nysa Protocol and its Sellers.
+
+To achieve this vision, Nysa introduces **three specialized Agents**, available on Nysa:
+
+* **Gluo** - Agent for Community Managent
+* **Lumia** - Agent for Risk-Management
+* **Vexo** - Agent for Conversational Access to DeFi Protocols
+
+{% columns %}
+{% column %}
+
+<h3 align="center">Gluo</h3>
+{% endcolumn %}
+
+{% column %}
+
+<h3 align="center">Lumia</h3>
+{% endcolumn %}
+
+{% column %}
+
+<h3 align="center">Vexo</h3>
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2FMXbi8qFa9TLvWxG5gsea%2Fgluo.png?alt=media&#x26;token=d09219c5-8003-4b87-b668-6033943f8b73" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2FJyM9eU4zx5PJ07qtpDvu%2Flumia.png?alt=media&#x26;token=2b211598-1dda-4f46-93a1-5cd8d879ebf7" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2Fwbl1HrwV75EMY8piydoH%2Fvexo.png?alt=media&#x26;token=6b7a6f32-1453-4bb9-9bb6-ec9c667b8fff" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+
+<h4 align="center"><a href="agents/gluo">Meet Gluo</a></h4>
+{% endcolumn %}
+
+{% column %}
+
+<h4 align="center"><a href="agents/lumia">Meet Lumia</a></h4>
+{% endcolumn %}
+
+{% column %}
+
+<h4 align="center"><a href="agents/vexo">Meet Vexo</a></h4>
+{% endcolumn %}
+{% endcolumns %}
+
+### Business Opportunities
+
+Nysa Agents are designed to be **modular and extensible**, offering a concrete business opportunity for both protocols and individuals.\
+Any Web3 protocol can integrate Nysa Agents into its ecosystem, with the option to apply **custom configurations and adaptations** based on specific needs.
+
+In parallel, any user can become a **NysaAgent Seller**, promoting and selling Nysa Agents while earning a **commission on every successful subscription**.
+
+To subscribe to a Nysa Agent or apply as a Seller, please [fill out this form.](https://form.typeform.com/to/xMeub7du)

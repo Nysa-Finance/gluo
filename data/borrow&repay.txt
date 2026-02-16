@@ -1,0 +1,35 @@
+# Borrow & Repay
+
+### Borrow
+
+Once assets are supplied, they begin generating interest and simultaneously act as collateral, making the user eligible to borrow additional assets.\
+The maximum borrowable amount is determined by each asset’s **Loan-To-Value (LTV)** parameter, which defines the proportion of an asset’s value that can be borrowed against its collateral.
+
+> For example, if an asset has an LTV of 80% and the value of the supplied collateral is $10,000 at the time of the borrowing request, the user can borrow up to $8,000.\
+> Borrowing allows users to take leveraged positions, access liquidity, or execute market strategies without liquidating their underlying holdings.\
+> Further details are available in the *Borrowing* section of the documentation.
+
+### Repay
+
+The repay function enables borrowers to return the assets they previously borrowed, including any accrued interest.\
+Repaying reduces the outstanding debt, restores the position’s health factor, and gradually releases the locked collateral. Once the debt is fully repaid, the collateral becomes entirely available for withdrawal or for opening new borrowing positions.
+
+### Tutorials
+
+#### **How to Borrow**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to borrow
+3. Click **Borrow**
+4. Enter the amount you wish to borrow
+5. Confirm and execute the transaction
+
+***
+
+#### **How to Repay**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to repay
+3. Click **Repay**
+4. Enter the amount you wish to repay
+5. Confirm and execute the transaction

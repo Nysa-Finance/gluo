@@ -1,0 +1,29 @@
+# Supply & Withdraw
+
+### Supply
+
+In the Nysa lending protocol, the supply function allows users to deposit supported assets into the platform, contributing liquidity that can be borrowed by other participants. By supplying assets, users earn passive interest over time, determined by the protocol’s interest rate model and the supply-demand dynamics of each asset.
+
+### Withdraw
+
+The withdraw function enables users to retrieve the assets they previously supplied to the protocol, subject to available on-chain liquidity. When withdrawing, users also collect (“harvest”) the interest accrued over time from lending their assets.
+
+### Tutorials
+
+#### **How to Deposit (Supply)**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to deposit
+3. Click **Supply**
+4. Enter the amount you wish to deposit
+5. Confirm and execute the transaction
+
+***
+
+#### **How to Withdraw**
+
+1. Access the Nysa App
+2. In the **Market** table, locate the asset you want to withdraw
+3. Click **Withdraw**
+4. Enter the amount you wish to withdraw
+5. Confirm and execute the transaction

@@ -1,0 +1,10 @@
+# Vexo
+
+**Vexo** enhances user interaction through a fully conversational experience.\
+Users connect their wallet, chat with Vexo, and confirm transactions directly through dialogue. This allows seamless navigation of the protocol without relying on traditional UI flows.\
+The team is also evaluating potential extensions enabling Vexo to interact with Aave, unlocking arbitrage opportunities between Nysa and Aave and expanding users’ earning strategies. Vexo can additionally provide recommendations, tutorials, onboarding guidance, and general support.
+
+Do you want to sell Vexo or integrate it to your Web3 Protocol? Please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+### Vexo's Job
+More is yet to come.

@@ -1,0 +1,11 @@
+# Gluo
+
+**Gluo** is Nysa’s community-facing agent, designed to support users, partners, and contributors through Discord.
+
+Gluo acts as a **community manager and first-line support layer**, helping users understand the protocol, stay up to date with official announcements, and navigate Nysa’s ecosystem efficiently.
+
+Do you want to sell Gluo or integrate it to your Web3 Protocol? Please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+### Gluo's Job
+
+<table><thead><tr><th width="216.22222900390625">Function</th><th>Description</th></tr></thead><tbody><tr><td>Education &#x26; Guidance</td><td><p>Helps users understand Nysa’s protocol and vision, explaining how to use the platform and providing structured information on:</p><ul><li>protocol analytics, architecture and core concepts</li><li>roadmap and upcoming milestones</li><li>Nysa Agents and their use cases</li><li>tokenomics, airdrops, and fundraising events</li></ul><p>All answers are based on official documentation.</p></td></tr><tr><td>Business Inquires</td><td>Guides users and external teams through business and partnership requests, clarifying how and where contacting the team.</td></tr><tr><td>Troubleshootings</td><td>Assists users with common issues and troubleshooting requests. When a request requires human intervention, Gluo gathers the necessary information and forwards it to the correct internal team branch, helping reduce response times and support overhead.</td></tr><tr><td>X Real-Time Data</td><td><p>Continuously monitors Nysa’s official X account to:</p><ol><li>Stay up to date with protocol announcements and respond to user questions about recent updates</li><li>Summarize and publish official announcements directly to Nysa’s Discord announcement channel</li></ol></td></tr></tbody></table>

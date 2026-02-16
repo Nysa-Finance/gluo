@@ -1,0 +1,10 @@
+e-mail: contact@nysa.finance
+website: www.nysa.finance
+Business Inquiries: https://form.typeform.com/to/xMeub7du
+Discord: https://discord.gg/6BxRytJdaE
+Documentation: https://nysa.gitbook.io/nysa/
+Testnet: www.testnet.nysa.finance
+Mainnet: www.app.nysa.finance
+X: @NysaFinance
+Medium: https://medium.com/@nysaprotocol
+LinkTree: https://linktr.ee/nysaprotocol

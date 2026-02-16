@@ -1,0 +1,10 @@
+# Lumia
+
+**Lumia** is dedicated to managing and simplifying the protocol’s **Risk Framework**.\
+It suggests optimal borrowing amounts for users, monitors TVL, Value-at-Risk, Liquidation conditions, and Supply/Borrow Caps. Lumia can be connected to the DAO or communication channels to recommend updated Caps, VaR thresholds, and other risk-related parameters.\
+Users may also consult Lumia for simplified explanations of their own risk posture and the protocol’s safety mechanics.
+
+Do you want to sell Lumia or integrate it to your Web3 Protocol? Please [fill out this form.](https://form.typeform.com/to/xMeub7du)
+
+### Lumia's Job
+More is yet to come.

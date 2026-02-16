@@ -1,0 +1,19 @@
+# Welcome
+
+<figure><img src="https://4232558630-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjMhvuWAh8hJBBdqZ414A%2Fuploads%2Fl4mA7jpSty6khsv0Wibh%2Fwelcome.png?alt=media&#x26;token=6c809337-206c-4961-9c9f-444693e1f209" alt=""><figcaption></figcaption></figure>
+
+Welcome to Nysa, a lending and borrowing platform designed to combine the reliability of Aave V3 with a next-generation, agent-driven management layer.\
+The protocol builds on Aave V3’s proven architecture and integrates autonomous Agents (Gluo, Lumia, Vexo) with the high-performance Linea blockchain to provide a lending environment focused on transparency, consistency and AI-Driven suggestions.
+
+### How can I use Nysa?
+
+Nysa is an overcollateralized lending and borrowing protocol built on a secure and modern architecture built on top of Aave V3. Within Nysa, users can operate in the following roles:
+
+* **Suppliers**\
+  Users can deposit supported assets into the protocol and earn passive interest. Interest rates are variable and defined by the protocol’s interest rate model, which reflects real-time supply and demand conditions. Supplied assets are borrowed by other users and are fully secured by the collateral they deposit, ensuring protection against borrower insolvency.
+* **Borrowers**\
+  By depositing assets as collateral, users become eligible to borrow other tokens available on Nysa. Borrowing can serve multiple purposes, including taking long or short positions, executing market strategies, exploiting arbitrage opportunities, or accessing short-term liquidity without unwinding long-term holdings.
+* **Liquidators**\
+  When a position becomes under-collateralized, Nysa activates its liquidation mechanism. Liquidators can repay part of a borrower’s debt and receive a reward defined by the protocol. This process ensures system stability and protects supplier funds.
+
+In addition, **any strategy, technical insight, or resource available within the protocol can be accessed and executed through Nysa’s AI Agents and their conversational interfaces**, enabling a more dynamic and guided interaction with the system.
